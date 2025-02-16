@@ -4,17 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cotizador de Seguros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #cotizador {
+            position: relative;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .superposicion {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120px; /* Ajusta este valor si el logo sigue viéndose */
+            background-color: white; /* O el color de fondo de tu web */
+            z-index: 100;
+        }
+    </style>
 </head>
 <body>
+
+    <h1>Calculá el seguro de tu auto</h1>
+
+    <section id="cotizador">
+        <div class="superposicion"></div> <!-- Esto oculta el logo -->
+        <iframe src="https://www.sancristobal.com.ar/pas/sb-seguros/cotizar?section=aboutUs" 
+                width="90%" 
+                height="800px" 
+                style="border: none;">
         </iframe>
-<h1 style="text-align: center;">Calculá el seguro de tu auto</h1>
+    </section>
 
-<section id="cotiza dor" style="text-align: center; margin-top: 20px;">
-    <div class="superposicion"></div> <!-- Esto oculta el logo -->
-    <iframe src="https://www.sancristobal.com.ar/pas/sb-seguros/cotizar?section=aboutUs" 
-            width="90%" 
-            height="800px" 
-            style="border: none;">
-    </iframe>
-</section>
-
+</body>
+</html>
